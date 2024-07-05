@@ -1,0 +1,134 @@
+
+:root{
+    /* variables */
+    --primary-color: #007bff;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+
+}
+
+
+.app{
+    display: flex;
+    height: 100vh;
+    background-color: #f0f0f0;
+    flex-direction: column;
+}
+
+
+#blockly-editor{
+    width: 100%;
+    flex: 1
+}
+
+
+.fill-height{
+    height: 100%;
+}
+
+
+.preview-code {
+    height: 40%;
+    align-items: stretch;
+    display:flex;
+    overflow: hidden;
+}
+
+.preview-options{
+    display: flex;
+    column-gap: 0.25rem;
+    border-bottom: 1px solid #d0d0d0;
+    width: 100%;
+    padding: 0.25rem;
+}
+
+button{
+    padding: 0.25rem;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    padding: 0.5rem 1rem;
+}
+
+ button:hover{
+    background-color: #ceeffc;
+}
+
+ button.active{
+    background-color: #a0e1fb;
+}
+
+.code {
+    position: relative;
+}
+code {
+    white-space: pre-wrap;
+}
+
+.copy-btn{
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    right: 0;
+}
+
+.copy-btn:hover{
+    color: var(--primary-color);
+}
+
+.d-flex{
+    display: flex;
+}
+
+.justify-space-between{
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
+
+
+.code-preview,.code-editor{
+    flex: 1;
+    padding: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.code-preview{
+    border-right: 1px solid #d0d0d0;
+
+}
+
+.code-editor textarea{
+    width: 100%;
+    height: 100%;
+    border: none;
+    resize: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.code{
+    position: relative;
+    max-height: 100%;
+    overflow-y: auto;
+}
