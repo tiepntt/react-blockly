@@ -11,6 +11,7 @@
     "predeploy": "build",
     "deploy": "gh-pages -d build"
   },
+  "homepage": "https://tiepntt.github.io/react-blockly",
   "dependencies": {
     "blockly": "^11.1.1",
     "highlight.js": "^11.9.0",
